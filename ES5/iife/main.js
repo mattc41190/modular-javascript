@@ -1,10 +1,6 @@
-var elems = document.getElementsByTagName( 'a' );
+(function(tempString) {
+  console.log('I am an IIFE');
+  var temp = tempString;
+})('I am code executing free from global scope pollution');
 
-for ( var i = 0; i < elems.length; i++ ) {
-
-  elems[ i ].addEventListener( 'click', function(e){
-    e.preventDefault();
-    alert( 'I am link #' + i );
-  }, 'false' );
-
-}
+console.log(typeof temp);

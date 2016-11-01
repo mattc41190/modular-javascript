@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/mattc41190/modular-javascript/issues"
   },
-  "homepage": "https://github.com/mattc41190/modular-javascript#readme"
+  "homepage": "https://github.com/mattc41190/modular-javascript#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }

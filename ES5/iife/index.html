@@ -24,13 +24,14 @@
 				</p>
 			</div>
 			<div class="code">
-				<pre><code class="language-javascript">var elems = document.getElementsByTagName( 'a' );
-for ( var i = 0; i < elems.length; i++ ) {
-  elems[ i ].addEventListener( 'click', function(e){
-    e.preventDefault();
-    alert( 'I am link #' + i );
-  }, 'false' );
-}</code></pre>
+				<pre><code class="language-javascript">
+(function() {
+  console.log('I am an IIFE');
+  var temp =  'I am code executing free from global scope pollution'
+})();
+
+console.log(typeof temp); //undefined
+				</code></pre>
 			</div>
 		</div>
 		<script src="../../prism.js" charset="utf-8"></script>
