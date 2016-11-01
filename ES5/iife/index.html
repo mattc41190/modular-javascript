@@ -3,18 +3,37 @@
 	<head>
 		<meta charset="utf-8">
 		<title>IIFE</title>
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Bungee+Hairline" rel="stylesheet">
 		<link rel="stylesheet" href="./style.css" media="screen" charset="utf-8">
+		<link rel="stylesheet" href="../../prism.css" media="screen" charset="utf-8">
 	</head>
 	<body>
 		<header>
-			header
+			<div class="menu">
+				<ul>
+					<li>IIFE</li>
+					<li>Singleton</li>
+					<li>Constructor</li>
+				</ul>
+			</div>
 		</header>
 		<div class="container">
-
+			<div class="intro">
+				<p>
+					To get an in depth look at how the following line of code works open your developer tools.
+				</p>
+			</div>
+			<div class="code">
+				<pre><code class="language-javascript">var elems = document.getElementsByTagName( 'a' );
+for ( var i = 0; i < elems.length; i++ ) {
+  elems[ i ].addEventListener( 'click', function(e){
+    e.preventDefault();
+    alert( 'I am link #' + i );
+  }, 'false' );
+}</code></pre>
+			</div>
 		</div>
-		<footer>
-			footer
-		</footer>
+		<script src="../../prism.js" charset="utf-8"></script>
 		<script src="./main.js" charset="utf-8"></script>
 	</body>
 </html>
