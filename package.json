@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/mattc41190/modular-javascript#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "lodash": "^4.16.6",
+    "request": "^2.76.0"
   }
 }
